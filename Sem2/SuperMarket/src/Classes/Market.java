@@ -9,8 +9,10 @@ import Interfaces.iReturnOrder; /* Импортирован интерфейс i
 
 public class Market implements iMarketBehaviour,iQueueBehaviour { 
     private List<iActorBehaviour> queue;
+    private List<iActorBehaviour> returnOrderQueue;
     public Market() {
         this.queue = new ArrayList<iActorBehaviour>();
+        this.returnOrderQueue = new ArrayList<iActorBehaviour>();
     }
     @Override
     public void acceptToMarket(iActorBehaviour actor) {
@@ -75,46 +77,46 @@ public class Market implements iMarketBehaviour,iQueueBehaviour {
         
     }
      
-    @Override
-    public void requestReturnOrder(iActorBehaviour actor) {
-        this.request.add(actor);
-        System.out.println(actor.getActor().getName()+" клиент сделал заявку на возврат товара ");     
+    // @Override
+    // public void requestReturnOrder(iActorBehaviour actor) {
+    //     this.request.add(actor);
+    //     System.out.println(actor.getActor().getName()+" клиент сделал заявку на возврат товара ");     
         
-    }
+    // }
   
-    public void requestReturnOrderApproved() {
-        for(iActorBehaviour actor:request)
+    // public void requestReturnOrderApproved() {
+    //     for(iActorBehaviour actor:request)
        
-        {
-            actor.setRequestRetur(true);
-            System.out.println(actor.getActor().getName()+" возврат клиенту одобрен ");
-        }
-    }
+    //     {
+    //         actor.setRequestRetur(true);
+    //         System.out.println(actor.getActor().getName()+" возврат клиенту одобрен ");
+    //     }
+    // }
       
-    @Override
-    public void payMoneyReturnOrder() {
-        for(iActorBehaviour actor: money)
-        {
-            if(actor.payMoneyReturnOrder())
-            {
-                actor.setTakeOrder(true);
-                System.out.println(actor.getActor().getName()+" клиенту выданы деньги за возврат ");
-            }
-        }
+    // @Override
+    // public void payMoneyReturnOrder() {
+    //     for(iActorBehaviour actor: money)
+    //     {
+    //         if(actor.payMoneyReturnOrder())
+    //         {
+    //             actor.setTakeOrder(true);
+    //             System.out.println(actor.getActor().getName()+" клиенту выданы деньги за возврат ");
+    //         }
+    //     }
         
-    }    
+    // }    
         
   
-    public void getMoneyReturnOrder() {
-        for(iActorBehaviour actor: money)
-        {
-            if(actor.getMoneyReturnOrder())
-            {
-                actor.setTakeOrder(true);
-                System.out.println(actor.getActor().getName()+" клиент получил деньги за возврат ");
-            }
-        }
+    // public void getMoneyReturnOrder() {
+    //     for(iActorBehaviour actor: money)
+    //     {
+    //         if(actor.getMoneyReturnOrder())
+    //         {
+    //             actor.setTakeOrder(true);
+    //             System.out.println(actor.getActor().getName()+" клиент получил деньги за возврат ");
+    //         }
+    //     }
         
-    }    
+    // }    
        
 }

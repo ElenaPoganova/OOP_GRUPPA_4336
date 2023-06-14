@@ -61,5 +61,6 @@ public class PromotionalClient extends Actor{
 @Override
     public String toString() {
       return "PromotionalClient [nameOfThePromotion=" + nameOfThePromotion + ", idPromoClient=" + idPromoClient + "]";
-    } 
+    }
+
 }

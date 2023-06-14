@@ -29,4 +29,5 @@ public class SpecialClient extends Actor{
     public Actor getActor() {
       return this;
     }
+   
 }

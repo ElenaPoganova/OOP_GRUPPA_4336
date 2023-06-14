@@ -1,8 +1,8 @@
 package Classes;
 
+import Interfaces.iReturnOrder;
 
-
-public class ReturnClient extends Actor {
+public class ReturnClient extends Actor implements iReturnOrder {
     public int idReturnOrderClient; /* номер клиента сделавшего возврат */
     public String dateReturnOrder; /* дата возврата товара */
     public int summaReturnOrder;
@@ -61,5 +61,25 @@ public class ReturnClient extends Actor {
     public String toString() {
         return "ReturnClient [idReturnOrderClient=" + idReturnOrderClient + ", dateReturnOrder=" + dateReturnOrder
                 + ", summaReturnOrder=" + summaReturnOrder + "]";
+    }
+    @Override
+    public void requestReturnOrder(boolean requestReturnOrder) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'requestReturnOrder'");
+    }
+    @Override
+    public void requestReturnOrderApproved(boolean requestReturnOrderApproved) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'requestReturnOrderApproved'");
+    }
+    @Override
+    public void payMoneyReturnOrder(boolean payMoneyReturnOrder) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'payMoneyReturnOrder'");
+    }
+    @Override
+    public void getMoneyReturnOrder(boolean getMoneyReturnOrder) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getMoneyReturnOrder'");
     }
 }    
