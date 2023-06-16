@@ -1,7 +1,7 @@
 package StudentDomen;
 
 public class User {
-    private String firstName;
+    protected String firstName;
     private String secondName;
     private int age;
     
@@ -38,6 +38,10 @@ public class User {
     @Override
     public String toString() {
         return "User [firstName=" + firstName + ", secondName=" + secondName + ", age=" + age + "]";
+    }
+
+    public double doubleValue() {
+        return 0;
     }
 
 
