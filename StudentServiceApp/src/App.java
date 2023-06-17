@@ -104,8 +104,8 @@ public class App {
         Teacher tea3 = new Teacher("Наталья", "Китова", 49, "Кандидат");
         Teacher tea4 = new Teacher("Вера", "Максимова", 35, "Кандидат");
         
-        AverageAge<Emploee> emp = new AverageAge<>(emploees); /*Определяем средний возраст сотрудников */
-        System.out.println(emp);
+        AverageAge<Emploee> emp = new AverageAge<Emploee>(emploees); /*Определяем средний возраст сотрудников */
+        System.out.println(emp.average());
         
         // Student s1 = new Student("Сергей", "Иванов", 22, 101);
 
