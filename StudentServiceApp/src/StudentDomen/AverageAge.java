@@ -5,9 +5,9 @@ import java.util.List;
 
 
 public class AverageAge<T extends User> {
-    private List<T>[] persons;
+    private List<T> persons;
     
-    public AverageAge(List<T>[] persons) {
+    public AverageAge(List<T> persons) {
         this.persons = persons;
     }
     

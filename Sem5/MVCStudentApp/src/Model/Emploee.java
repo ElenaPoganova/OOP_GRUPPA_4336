@@ -1,4 +1,4 @@
-package StudentDomen;
+package Model;
 
 public class Emploee extends User {
     private String special;

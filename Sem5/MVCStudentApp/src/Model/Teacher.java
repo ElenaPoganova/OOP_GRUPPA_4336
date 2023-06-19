@@ -1,4 +1,4 @@
-package StudentDomen;
+package Model;
 
 public class Teacher extends User {
     private String acadDegree;

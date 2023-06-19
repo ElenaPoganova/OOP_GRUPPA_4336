@@ -1,4 +1,4 @@
-package StudentDomen;
+package Model;
 
 public class User {
     protected String firstName;
