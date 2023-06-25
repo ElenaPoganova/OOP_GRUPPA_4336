@@ -2,15 +2,11 @@ package Model;
 
 public class Student extends User implements Comparable<Student>{
     private long studentId;
-    private Integer long1;
+ 
 
     public Student(String firstName, String secondName, Integer age, Integer studentId) {
         super(firstName, secondName, age);
         this.studentId = studentId;
-    }
-
-    public Student(String firstName, String secondName, int age, Integer long1) {
-        this.long1 = long1;
     }
 
     public long getStudentId() {

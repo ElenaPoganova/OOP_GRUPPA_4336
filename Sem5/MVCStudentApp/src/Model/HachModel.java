@@ -31,5 +31,4 @@ public class HachModel implements iGetModel  {
         return -1;
     }
 }
-
  

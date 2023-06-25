@@ -37,6 +37,5 @@ public class View implements iGetView{
         return scanner.nextLong();
     }   
     
-}
-   
+} 
 

@@ -27,7 +27,7 @@ public class FileModel implements iGetModel{
 
     @Override
     public List<Student> getAllStudents() {
-        List<Student> students  = new ArrayList<Student>(); 
+        List<Student> students  = new ArrayList<>();
         try
         {
             File file = new File(fileName);

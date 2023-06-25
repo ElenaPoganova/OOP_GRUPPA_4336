@@ -37,7 +37,7 @@ public class App {
         // students.add(s9);
         // students.add(s10);
 
-        Student s1 = new Student("Никита", "Никитин", 23, (long) 101);
+        Student s1 = new Student("Никита", "Никитин", 23, 101);
         Student s2 = new Student("Вероника", "Вероникина", 20, 102);
         Student s3 = new Student("Елена", "Ленина",27 , 103);
         Student s4 = new Student("Том", "Боббс", 35, 104);
@@ -48,7 +48,7 @@ public class App {
         Student s9 = new Student("Томара", "Бобкова", 25, 109);
         Student s10 = new Student("Ксения", "Сергеева", 19, 110);
 
-        HashMap<Long, Student> hachStudents = new HashMap<Long, Student>();
+        HashMap<Long, Student> hashStudents = new HashMap<Long, Student>();
         
         hashStudents.put((long) 101, s1);
         hashStudents.put((long) 102, s2);
@@ -70,7 +70,7 @@ public class App {
         iGetView view = new View();
 
         
-        iGetModel model = new HachModel(hachStudents);
+        iGetModel model = new HachModel(hashStudents);
 
         Controller controller = new Controller(view, model);
         // controller.update();
