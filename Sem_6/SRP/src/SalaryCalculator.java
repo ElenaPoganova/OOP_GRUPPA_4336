@@ -1,8 +1,8 @@
 package OOP_GRUPPA_4336.Sem_6.SRP.src;
 /* Класс по рассчету зарплаты */
-private class SalaryCalculator {
+class SalaryCalculator {
     private double taxRate = 0.25;
-    private int calculateNetSalary(Employee employee) {
+    public int calculateNetSalary(Employee employee) {
         int tax = (int) (employee.getBaseSalary() * taxRate); //calculate in otherway
         return employee.getBaseSalary() - tax;
     }

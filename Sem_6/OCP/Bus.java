@@ -10,3 +10,4 @@ public class Bus extends Vehicle {
         return super.getMaxSpeed() * 0.6;
     }
 }
+
